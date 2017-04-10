@@ -32,9 +32,9 @@ class Buttons extends React.Component {
 
         this.setState({ initial: e.target.value });
 
-        if(e.target.value=='') {
-            this.setState({ initial: '0' });
-        } 
+         if(e.target.value=='') {
+             this.setState({ initial: '0' });
+         } 
 
         this.props.onUpdateInit(parseInt(e.target.value));
 

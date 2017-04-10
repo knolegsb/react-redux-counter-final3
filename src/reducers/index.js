@@ -14,10 +14,10 @@ const counter = (state = counterInitialState, action) => {
                 
             });
       
-        case SET_INIT:
-            return Object.assign({}, state, {
-                initial: action.initial               
-            });
+         case SET_INIT:
+             return Object.assign({}, state, {
+                 initial: action.initial               
+             });
         default:
             return state;
     }

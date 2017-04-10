@@ -21720,7 +21720,7 @@
 	                this.setState({ initial: '0' });
 	            }
 
-	            //this.props.onUpdateDiff(parseInt(e.target.value));
+	            this.props.onUpdateInit(parseInt(e.target.value));
 	        }
 	    }]);
 
@@ -21731,6 +21731,9 @@
 	    return {
 	        onIncrement: function onIncrement() {
 	            return dispatch((0, _actions.increment)());
+	        },
+	        onUpdateInit: function onUpdateInit(value) {
+	            return dispatch((0, _actions.setInit)(value));
 	        }
 	    };
 	};
